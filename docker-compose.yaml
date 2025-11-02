@@ -4,6 +4,8 @@ services:
     container_name: beermapping
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
+    ports:
+      - "8080:8080"
 
   watchtower:
     image: containrrr/watchtower
